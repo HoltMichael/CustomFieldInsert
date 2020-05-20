@@ -1,0 +1,12 @@
+<template>
+
+    <div style="font-weight:bold;font-size:large">Custom Field Creator</div>
+
+    <lightning-input label="Object Name" onchange={updateObjectName}></lightning-input>
+    <lightning-input label="Field API Name" onchange={updateFieldName}></lightning-input>
+    <lightning-input label="Field Label" onchange={updateFieldLabel}></lightning-input>
+    <lightning-input label="Field Description" onchange={updateFieldDesc}></lightning-input>
+    <div class="slds-var-p-top_medium">
+        <lightning-button label="Go!" onclick={insertField}></lightning-button>
+    </div>
+</template>

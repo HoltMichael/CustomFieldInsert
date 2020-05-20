@@ -1,0 +1,18 @@
+<apex:page>
+
+    <apex:includeLightning/> 
+    <div id="lwc" />
+
+    <script>
+        $Lightning.use("AccountDelete:AuraAppForLwcInVf", function() {
+          $Lightning.createComponent("AccountDelete:insertCustomField",
+              null,
+              "lwc",
+              function(cmp) {
+                console.log("Insert Custom Field Displayed");
+                // do some stuff
+              }
+          );
+        });
+    </script>
+</apex:page>
