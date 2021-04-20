@@ -4,8 +4,8 @@
     <div id="lwc" />
 
     <script>
-        $Lightning.use("AccountDelete:AuraAppForLwcInVf", function() {
-          $Lightning.createComponent("AccountDelete:insertCustomField",
+        $Lightning.use("c:AuraAppForLwcInVf", function() {
+          $Lightning.createComponent("c:insertCustomField",
               null,
               "lwc",
               function(cmp) {
